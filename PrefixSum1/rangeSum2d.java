@@ -17,9 +17,9 @@ class Solution {
 		int[][] pref = new int[n][m];
 		for(int i = 0;i<n;i++){
 			for(int j = 0;j<m;j++){
-				int A  =  i== 0 || j == 0?0:a[i-1][j-1];
-				int B = j==0?0:a[i][j-1];
-				int C = i==0?0:a[i-1][j];
+				int A  =  i== 0 || j == 0?0:pref[i-1][j-1];
+				int B = j==0?0:pref[i][j-1];
+				int C = i==0?0:pref[i-1][j];
 				pref[i][j] = a[i][j] + B + C - A;
 			}
 		}
