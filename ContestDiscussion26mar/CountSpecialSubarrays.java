@@ -7,7 +7,7 @@ class Solution
    public static long countSubarrays(int[] nums, long k) {
 	// Your code here
 		int sp = 0;
-	   int ep = 0;
+	    int ep = 0;
 	   long csum = 0;
 	   long ans = 0;
 	   while(ep<nums.length){
